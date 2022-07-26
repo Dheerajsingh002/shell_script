@@ -1,0 +1,12 @@
+echo "enter the name"
+read -a names
+echo
+echo "Names entered are ${names[*]}"
+#echo "Name entered at 3rd place is ${names[2]}"
+a=1;
+sum=0
+for((a=1; $a<=names; a++))
+do
+     sum=names[$a]+sum
+done
+echo "$sum"
