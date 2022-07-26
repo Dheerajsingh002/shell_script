@@ -1,0 +1,11 @@
+echo "enter the number"
+read n
+a=1;
+for((a=1; $a<=n; a++))
+do
+	read arr[$a];
+done
+for((a=1; $a<=n; a++))
+do
+	echo "$a"
+done
