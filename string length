@@ -1,0 +1,5 @@
+echo "Enter the String"
+read s
+len=`echo $s |wc -c`
+len=`expr $len - 1`
+echo length is $len
