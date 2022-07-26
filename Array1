@@ -1,0 +1,17 @@
+read -a arr
+echo "array is "
+m=${#arr[*]}
+echo $m
+for((a=0; $a < m-1; a++))
+do
+	for((b=a+1;b<m;b++))
+	do
+		if[ ${arr[b]} -lt ${arr[a]} ]
+		then
+			temp=${arr[b]}
+			arr[b]=${arr[a]}
+			arr[a]=$temp
+		fi
+	done
+done
+echo ${arr[*]}
